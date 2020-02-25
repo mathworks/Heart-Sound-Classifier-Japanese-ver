@@ -102,7 +102,7 @@ addpath('.\HelperFunctions\');
 ![image_1.png ](HeartSoundClassification_LiveScript_JP_images/image_1.png )
 
 
-\matlabheading{![image_2.png](HeartSoundClassification_LiveScript_JP_images/image_2.png)}
+![image_2.png](HeartSoundClassification_LiveScript_JP_images/image_2.png)
 # 異常な心音を再生すると？
 
 
@@ -132,7 +132,7 @@ plot(PCG_normal(1:fs*3))
 
 ![figure_1.png](HeartSoundClassification_LiveScript_JP_images/figure_1.png)
 
-\matlabheading{![image_3.png](HeartSoundClassification_LiveScript_JP_images/image_3.png)}
+![image_3.png](HeartSoundClassification_LiveScript_JP_images/image_3.png)
 # 周波数領域では信号はどう見える？
 
 
@@ -152,7 +152,7 @@ signalAnalyzer(PCG_abnormal, PCG_normal)
 ![image_4.png](HeartSoundClassification_LiveScript_JP_images/image_4.png)
 
 
-\matlabheading{![image_5.png](HeartSoundClassification_LiveScript_JP_images/image_5.png)}
+![image_5.png](HeartSoundClassification_LiveScript_JP_images/image_5.png)
 # データ読み込みの準備
 
 
@@ -191,7 +191,7 @@ Processing files from folder: training-d
 Processing files from folder: training-e
 Processing files from folder: training-f
 ```
-\matlabheading{![image_7.png](HeartSoundClassification_LiveScript_JP_images/image_7.png)}
+![image_7.png](HeartSoundClassification_LiveScript_JP_images/image_7.png)
 # 実際の心音信号からの特徴量抽出
 
 
@@ -248,7 +248,7 @@ disp(feature_table(1:5,:))
     -7.8979e-05    -0.00015259        0.019643               0.012688           -0.0090179     0.008606     0.017624        0.78882            13.674            -2.716           0.25299                24.915                     0.065139                     0.4354            87.303    7.4797    7.4607     -0.73843    -0.74028    -4.1818    -2.0782      1.8257       0.865    2.4926    -0.91656    -0.55254    -2.2298    'Abnormal'
      4.4342e-06     0.00048828        0.023276               0.012722           -0.0072021    0.0073853     0.014587         1.2829            21.825           -2.7703           0.27842                30.288                     0.051823                    0.34453            88.171    7.8968    6.8715      0.85403    -0.82052    -5.8922    -2.0241      1.5196    -0.64708     3.923     -0.5634     -1.7582    -0.4827    'Abnormal'
 ```
-\matlabheading{![image_8.png](HeartSoundClassification_LiveScript_JP_images/image_8.png)}
+![image_8.png](HeartSoundClassification_LiveScript_JP_images/image_8.png)
 # 学習、比較、分類器の選択 
 
 
@@ -272,8 +272,7 @@ classificationLearner
 
 多くの異常音が、正常であると誤分類されており、これは、深刻な心臓病を持つかもしれない患者を誤診断する可能性があることを意味するため、臨床診断において重大な問題となりかねません。モデルの精度を改善するために、以下のセッションでは、さらなる最適化を行っていきます。
 
-
-\matlabheading{![image_9.png](HeartSoundClassification_LiveScript_JP_images/image_9.png)}
+![image_9.png](HeartSoundClassification_LiveScript_JP_images/image_9.png)
 # データを学習用とテスト用に分ける 
 
 
@@ -301,7 +300,7 @@ disp(grpstats_training(:,'GroupCount'))
     Abnormal       2211   
     Normal         6900   
 ```
-\matlabheading{![image_10.png](HeartSoundClassification_LiveScript_JP_images/image_10.png)}
+![image_10.png](HeartSoundClassification_LiveScript_JP_images/image_10.png)
 # 誤分類コストをふまえた分類器の学習
 
 
@@ -355,7 +354,7 @@ heatmap(labels, labels, conf_mat_per, 'Colormap', winter, 'ColorbarVisible','off
 
 ![figure_2.png](HeartSoundClassification_LiveScript_JP_images/figure_2.png)
 
-\matlabheading{![image_11.png](HeartSoundClassification_LiveScript_JP_images/image_11.png)}
+![image_11.png](HeartSoundClassification_LiveScript_JP_images/image_11.png)
 # 近傍成分分析による特徴量の選択
 
 
@@ -398,7 +397,7 @@ disp(feature_table.Properties.VariableNames(selected_feature_indx))
 
     'MFCC7'    'MFCC8'    'MFCC9'    'MFCC10'    'MFCC11'    'MFCC12'    'MFCC13'
 ```
-\matlabheading{![image_12.png](HeartSoundClassification_LiveScript_JP_images/image_12.png)}
+![image_12.png](HeartSoundClassification_LiveScript_JP_images/image_12.png)
 # 選択された特徴量を使った学習
 
 
@@ -433,7 +432,7 @@ heatmap(labels,labels,conf_mat_per_featsel, 'Colormap', winter, 'ColorbarVisible
 
 ![figure_4.png](HeartSoundClassification_LiveScript_JP_images/figure_4.png)
 
-\matlabheading{![image_13.png](HeartSoundClassification_LiveScript_JP_images/image_13.png)}
+![image_13.png](HeartSoundClassification_LiveScript_JP_images/image_13.png)
 # コード生成
 
 
