@@ -1,6 +1,14 @@
+**English version is available [here](https://jp.mathworks.com/matlabcentral/fileexchange/65286-heart-sound-classifier)**
+
 # Introduction
 
 eBook:「機械学習をマスターする: MATLAB ステップ・バイ・ステップ ガイド」で紹介するデモを再現するためのスクリプトです。
+
+詳細解析は[こちら](https://github.com/mathworks/Heart-Sound-Classifier-Japanese-ver/blob/master/HeartSoundClassificationR2018b_JP/HeartSoundClassification_LiveScript_JP.md)
+
+
+# What does this example provide
+
 このデモでは、組み込み機械学習アプリ開発のための一連のワークフロー、具体的にはデータの読み込み、
 特徴抽出、各種アルゴリズムの検討、モデルのチューニング、そしてプロトタイプ配布までを紹介します。
 
@@ -16,7 +24,6 @@ eBook は[こちら](https://jp.mathworks.com/campaigns/offers/mastering-machine
 4. モデルの最適化
 5. 学習済みモデルのCコード生成
 
-**English version is available [here](https://jp.mathworks.com/matlabcentral/fileexchange/65286-heart-sound-classifier)**
 
 ## Environment
 
